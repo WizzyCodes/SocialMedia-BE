@@ -12,4 +12,5 @@ app.use(cors());
 mainApp(app);
 app.listen(parseInt(process.env.PORT as string), () => {
   dbConfig();
+  console.log(process.env.PORT);
 });
